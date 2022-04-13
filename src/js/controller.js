@@ -124,6 +124,10 @@ const controlAddRecipe = async function (newRecipe) {
   //console.log(newRecipe);
 };
 
+const newFeature = function () {
+  console.log('Dobro dosli u ovu aplikaciju, veoma nam je drago da ste ovde!');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHanlderRender(controlRecipes);
@@ -132,5 +136,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 init();
